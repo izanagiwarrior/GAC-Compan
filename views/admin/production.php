@@ -33,12 +33,11 @@
           <thead>
             <tr>
               <th width="1%">No.</th>
-              <th>Customer</th>
+              <th>Customer ID</th>
               <th>Order Quantity</th>
               <th>Start</th>
               <th>Stop</th>
               <th>Hours</th>
-              <th>WIP</th>
               <th>Finish Good</th>
               <th>Defect Product</th>
               <th width="5%">Action</th>
@@ -58,7 +57,6 @@
                 <td><?php echo $data['start'] ?></td>
                 <td><?php echo $data['stop'] ?></td>
                 <td><?php echo $data['hours'] ?></td>
-                <td><?php echo $data['wip'] ?></td>
                 <td><?php echo $data['finish_good'] ?></td>
                 <td><?php echo $data['defect_product'] ?></td>
                 <td align="center">

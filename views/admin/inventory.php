@@ -35,6 +35,7 @@ $row = $dbconnect->query("SELECT * FROM inventory")
                                 <th>Material ID</th>
                                 <th>Material Name</th>
                                 <th>Stock Avaibilty</th>
+                                <th>Status</th>
                                 <th>Stored</th>
                                 <th>Received Date</th>
                             </tr>
@@ -49,6 +50,7 @@ $row = $dbconnect->query("SELECT * FROM inventory")
                                         <td><?php echo $data['id'] ?></td>
                                         <td><?php echo $data['product_name'] ?></td>
                                         <td><?php echo $data['stock'] ?></td>
+                                        <td><?php echo $data['status'] ?></td>
                                         <td><?php echo $data['stored'] ?></td>
                                         <td><?php echo $data['received_date'] ?></td>
                                     </tr>

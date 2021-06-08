@@ -20,7 +20,7 @@
   <link href="../assets/css/sb-admin-2-ram.css" rel="stylesheet">
 
 </head>
-<body class="bg-gradient-info">
+<body class="bg-gradient-warning">
 
   <div class="container">
     <!-- Outer Row -->

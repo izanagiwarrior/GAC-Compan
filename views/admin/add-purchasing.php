@@ -26,12 +26,17 @@ include 'header.php';
 				<div class="card-body">
 					<tr>
 						<div class="form-group">
-							<label>Date</label>
-							<input type="date" class="form-control form-control-sm" name="date" required>
-						</div>
-						<div class="form-group">
 							<label>Material Name</label>
-							<input type="text" class="form-control form-control-sm" name="material_name" placeholder="Input Material Name . ." required>
+							<select name="material_name" id="cars" class="form-control form-control-sm" required>
+								<option value="Wood">Wood</option>
+								<option value="Acrylic">Acrylic</option>
+								<option value="ABS Plastic">ABS Plastic</option>
+								<option value="Lamps">Lamps</option>
+								<option value="On-off switch">On-off switch</option>
+								<option value="Speaker">Speaker</option>
+								<option value="Battery">Battery</option>
+								<option value="Mainboard">Mainboard</option>
+							</select>
 						</div>
 						<div class="form-group">
 							<label>Quantity</label>
@@ -40,6 +45,17 @@ include 'header.php';
 						<div class="form-group">
 							<label>Price</label>
 							<input type="number" class="form-control form-control-sm" name="price" placeholder="Input Price . ." required>
+						</div>
+						<div class="form-group">
+							<label>Status</label>
+							<select name="status" id="cars" class="form-control form-control-sm" required>
+								<option value="Requested">Requested</option>
+								<option value="Finished">Finished</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Date</label>
+							<input type="date" class="form-control form-control-sm" name="date" required>
 						</div>
 				</div>
 				<div class="card-footer al-right">

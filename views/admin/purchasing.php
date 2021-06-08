@@ -55,9 +55,7 @@ $row = $dbconnect->query("SELECT * FROM purchasing")
                     <td><?php echo $data['quantity'] ?></td>
                     <td><?php echo $data['price'] ?></td>
                     <td><?php echo $data['quantity']*$data['price'] ?></td>
-                    <td align="center">
-
-                    </td>
+                    <td><?php echo $data['status'] ?></td>
                   </tr>
 
               <?php $no++;

@@ -5,13 +5,14 @@
     $material_name = $_POST['material_name'];
     $quantity = $_POST['quantity'];
     $price = $_POST['price'];
+    $status = $_POST['status'];
     
 
 
     try {
         // set the PDO error mode to exception
         $dbconnect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $row = ("INSERT INTO purchasing (date, material_name, quantity, price) VALUES ('$date', '$material_name', '$quantity', '$price')");
+        $row = ("INSERT INTO purchasing (date, material_name, quantity, price,status) VALUES ('$date', '$material_name', '$quantity', '$price', '$status')");
         // use exec() because no results are returned
         $dbconnect->exec($row);
         echo "New record created successfully";

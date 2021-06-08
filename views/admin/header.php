@@ -12,7 +12,7 @@ include '../../Config/conn.php'; ?>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>ENSYSe Transaction</title>
+	<title>GAC Company</title>
 
 	<!-- Custom fonts for this template-->
 	<link href="../../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -32,13 +32,13 @@ include '../../Config/conn.php'; ?>
 	<div id="wrapper">
 
 		<!-- Sidebar -->
-		<ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+		<ul class="navbar-nav bg-gradient-warning sidebar sidebar-primary accordion" id="accordionSidebar">
 
 			<!-- Sidebar - Brand -->
 			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 				<div class="sidebar-brand-icon rotate-n-15">
 				</div>
-				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo-gac.png" width="35%"></div>
+				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo-gac.png" width="80%"></div>
 			</a>
 
 			<!-- Divider -->
@@ -62,7 +62,7 @@ include '../../Config/conn.php'; ?>
 			<!-- MENU A -->
 			<li class="nav-item <?php if (isset($menu1A)) echo $menu1A ?>">
 				<a class="nav-link" href="production.php?page=1A">
-					<i class="fas fa-fw fa-user-circle"></i>
+					<i class="fas fa-fw fa-address-book"></i>
 					<span>PRODUCTION</span></a>
 			</li>
 

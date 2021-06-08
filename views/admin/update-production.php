@@ -30,7 +30,7 @@ $data = $row->fetch();
           <h5 class="mb-4">Schedule</h5>
           <tr>
             <div class="form-group">
-              <label>Customer</label>
+              <label>Customer ID</label>
               <input type="text" class="form-control form-control-sm" name="customer" value="<?php echo $data['customer'] ?>" placeholder="Input Customer . ." required>
             </div>
             <div class="form-group">
@@ -42,19 +42,28 @@ $data = $row->fetch();
 
             <div class="form-group">
               <label>Start</label>
-              <input type="text" class="form-control form-control-sm" name="start" value="<?php echo $data['start'] ?>" placeholder="Input Start . ." required>
+              <select name="start" id="cars" class="form-control form-control-sm" required>
+                <option value="07.00">07.00</option>
+                <option value="08.00">08.00</option>
+                <option value="09.00">09.00</option>
+                <option value="10.00">10.00</option>
+                <option value="11.00">11.00</option>
+                <option value="12.00">12.00</option>
+              </select>
             </div>
             <div class="form-group">
               <label>Stop</label>
-              <input type="text" class="form-control form-control-sm" name="stop" value="<?php echo $data['stop'] ?>" placeholder="Input Stop . ." required>
+              <select name="stop" id="cars" class="form-control form-control-sm" required>
+                <option value="13.00">13.00</option>
+                <option value="14.00">14.00</option>
+                <option value="15.00">15.00</option>
+                <option value="16.00">16.00</option>
+                <option value="17.00">17.00</option>
+              </select>
             </div>
             <div class="form-group">
               <label>Hours</label>
               <input type="text" class="form-control form-control-sm" name="hours" value="<?php echo $data['hours'] ?>" placeholder="Input Hours . ." required>
-            </div>
-            <div class="form-group">
-              <label>WIP</label>
-              <input type="text" class="form-control form-control-sm" name="wip" value="<?php echo $data['wip'] ?>" placeholder="Input WIP . ." required>
             </div>
             <div class="form-group">
               <label>Finish Good</label>
