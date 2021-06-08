@@ -1,4 +1,6 @@
-<?php session_start();  include '../../Config/page.php'; include '../../Config/conn.php';?>
+<?php session_start();
+include '../../Config/page.php';
+include '../../Config/conn.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,14 +31,14 @@
 	<!-- Page Wrapper -->
 	<div id="wrapper">
 
-    	<!-- Sidebar -->
-    	<ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
+		<!-- Sidebar -->
+		<ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
-    		<!-- Sidebar - Brand -->
+			<!-- Sidebar - Brand -->
 			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 				<div class="sidebar-brand-icon rotate-n-15">
 				</div>
-				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo.png" width="35%"></div>
+				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo-gac.png" width="35%"></div>
 			</a>
 
 			<!-- Divider -->
@@ -45,79 +47,85 @@
 			<!-- Nav Item - Dashboard -->
 			<li class="nav-item <?php if (isset($menu0)) echo $menu0 ?>">
 				<a class="nav-link" href="home.php?page=home">
-				  <i class="fas fa-fw fa-home"></i>
-				  <span>Home</span></a>
+					<i class="fas fa-fw fa-home"></i>
+					<span>Home</span></a>
 			</li>
 
-		    <!-- Divider -->
-		    <hr class="sidebar-divider">
+			<!-- Divider -->
+			<hr class="sidebar-divider">
 
-		    <!-- Heading -->
-		    <div class="sidebar-heading">
-		        MAIN MENU
-		    </div>
+			<!-- Heading -->
+			<div class="sidebar-heading">
+				MAIN MENU
+			</div>
 
-		    <!-- MENU A -->
-		    <li class="nav-item <?php if (isset($menu1A)) echo $menu1A ?>">
-		        <a class="nav-link" href="employee.php?page=1A">
-		        <i class="fas fa-fw fa-user-circle"></i>
-		        <span>EMPLOYEE</span></a>
-		    </li>
+			<!-- MENU A -->
+			<li class="nav-item <?php if (isset($menu1A)) echo $menu1A ?>">
+				<a class="nav-link" href="production.php?page=1A">
+					<i class="fas fa-fw fa-user-circle"></i>
+					<span>PRODUCTION</span></a>
+			</li>
 
-		    <li class="nav-item <?php if (isset($menu2A)) echo $menu2A ?>">
-		        <a class="nav-link" href="account.php?page=2A">
-		        <i class="fas fa-fw fa-address-book"></i>
-		        <span>ACCOUNT</span></a>
-		    </li>
+			<li class="nav-item <?php if (isset($menu2A)) echo $menu2A ?>">
+				<a class="nav-link" href="purchasing.php?page=2A">
+					<i class="fas fa-fw fa-address-book"></i>
+					<span>PURCHASING</span></a>
+			</li>
 
-		    <!-- Divider -->
-		    <hr class="sidebar-divider">
+			<li class="nav-item <?php if (isset($menu3A)) echo $menu3A ?>">
+				<a class="nav-link" href="inventory.php?page=3A">
+					<i class="fas fa-fw fa-address-book"></i>
+					<span>INVENTORY</span></a>
+			</li>
 
-		    <!-- Sidebar Toggler (Sidebar) -->
-		    <div class="text-center d-none d-md-inline">
-		        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-		    </div>
+			<!-- Divider -->
+			<hr class="sidebar-divider">
 
-	    </ul>
-    <!-- End of Sidebar -->
+			<!-- Sidebar Toggler (Sidebar) -->
+			<div class="text-center d-none d-md-inline">
+				<button class="rounded-circle border-0" id="sidebarToggle"></button>
+			</div>
 
-    <!-- Content Wrapper -->
-	    <div id="content-wrapper" class="d-flex flex-column">
+		</ul>
+		<!-- End of Sidebar -->
 
-		    <!-- Main Content -->
-		    <div id="content">
+		<!-- Content Wrapper -->
+		<div id="content-wrapper" class="d-flex flex-column">
 
-		        <!-- Topbar -->
-		        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+			<!-- Main Content -->
+			<div id="content">
 
-			        
-			        <!-- Sidebar Toggle (Topbar) -->
-			        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-			        	<i class="fa fa-bars"></i>
-			        </button>
+				<!-- Topbar -->
+				<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-			        <!-- Topbar Navbar -->
-			        <ul class="navbar-nav ml-auto">
-		         
 
-			            <div class="topbar-divider d-none d-sm-block"></div>
+					<!-- Sidebar Toggle (Topbar) -->
+					<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+						<i class="fa fa-bars"></i>
+					</button>
 
-			            <!-- Nav Item - User Information -->
-			            <li class="nav-item dropdown no-arrow">
-				            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				            	<span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fas fa-user-tie fa-sm fa-fw mr-2"></i><?=$_SESSION["name"]?></span>
-				            </a>
-			            </li>
+					<!-- Topbar Navbar -->
+					<ul class="navbar-nav ml-auto">
 
-			            <div class="topbar-divider d-none d-sm-block"></div>
-			            
-			            <li class="nav-item">
-			            	<a class="nav-link" href="../../auth/logout.php">
-			            		<span class="mr-2 d-none d-lg-inline small"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2"></i>Logout</span>
-			            	</a>
-			            </li>
 
-		        	</ul>
+						<div class="topbar-divider d-none d-sm-block"></div>
+
+						<!-- Nav Item - User Information -->
+						<li class="nav-item dropdown no-arrow">
+							<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fas fa-user-tie fa-sm fa-fw mr-2"></i><?= $_SESSION["name"] ?></span>
+							</a>
+						</li>
+
+						<div class="topbar-divider d-none d-sm-block"></div>
+
+						<li class="nav-item">
+							<a class="nav-link" href="../../auth/logout.php">
+								<span class="mr-2 d-none d-lg-inline small"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2"></i>Logout</span>
+							</a>
+						</li>
+
+					</ul>
 
 				</nav>
 				<!-- End of Topbar -->

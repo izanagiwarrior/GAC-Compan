@@ -14,13 +14,13 @@
             
 
             <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <a href="employee.php?page=1A" class="link">
+            <div class="col-xl-3 col-md-4 mb-4">
+              <a href="production.php?page=1A" class="link">
                 <div class="card card-link border-left-success shadow h-100 py-2">
                   <div class="card-body">
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
-                        <div class="h5 mb-0 font-weight-bold text-success text-uppercase mb-1">EMPLOYEE</div>
+                        <div class="h5 mb-0 font-weight-bold text-success text-uppercase mb-1">PRODUCTION</div>
                       </div>
                       <div class="col-auto">
                         <i class="fas fa-user-circle fa-2x text-gray-300"></i>
@@ -32,13 +32,32 @@
             </div>
 
             <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <a href="account.php?page=2A" class="link">
+            <div class="col-xl-3 col-md-4 mb-4">
+              <a href="purchasing.php?page=2A" class="link">
                 <div class="card border-left-info card-link shadow h-100 py-2">
                   <div class="card-body">
                     <div class="row no-gutters align-items-center">
                       <div class="col mr-2">
-                        <div class="h5 mb-0 font-weight-bold text-info text-uppercase mb-1">ACCOUNT</div>
+                        <div class="h5 mb-0 font-weight-bold text-info text-uppercase mb-1">PURCHASING</div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-address-book fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+        </div>
+        
+        <!-- Earnings (Monthly) Card Example -->
+            <div class="col-xl-3 col-md-4 mb-4">
+              <a href="inventory.php?page=3A" class="link">
+                <div class="card border-left-info card-link shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="h5 mb-0 font-weight-bold text-info text-uppercase mb-1">INVENTORY</div>
                       </div>
                       <div class="col-auto">
                         <i class="fas fa-address-book fa-2x text-gray-300"></i>

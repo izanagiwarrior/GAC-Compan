@@ -1,4 +1,4 @@
 <?php 
 	//create PDO connection
-	$dbconnect = new PDO('mysql:host=localhost;dbname=',"root","");
+	$dbconnect = new PDO('mysql:host=localhost;dbname=gac',"root","");
 ?>

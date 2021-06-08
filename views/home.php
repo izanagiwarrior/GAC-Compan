@@ -13,7 +13,7 @@
 <!-- Content here -->
 <div class="row justify-content-center"> 
   <div class="col-lg-10">
-  <div><img src="../assets/img/logo2.png" width="100%"></div>
+  <div><img src="../assets/img/logo-gac.png" width="100%"></div>
     <!-- DataTales Example -->
 
   </div>
