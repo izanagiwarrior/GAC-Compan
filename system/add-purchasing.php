@@ -1,6 +1,9 @@
 <?php
     session_start();
     include "../config/conn.php";
+    if ($_SESSION['div'] != 'purchasing') {
+      header("location: ../" . $_SESSION['role'] . "/home.php?page=home");
+    }
     $date = $_POST['date'];
     $material_name = $_POST['material_name'];
     $quantity = $_POST['quantity'];
@@ -22,4 +25,3 @@
       }
       
       $dbconnect = null;
-?>

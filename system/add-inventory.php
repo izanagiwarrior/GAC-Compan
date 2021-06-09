@@ -1,6 +1,9 @@
 <?php
     session_start();
     include "../config/conn.php";
+    if ($_SESSION['div'] != 'inventory') {
+      header("location: ../" . $_SESSION['role'] . "/home.php?page=home");
+    }
     $product_name = $_POST['product_name'];
     $stock = $_POST['stock'];
     $received_date = $_POST['received_date'];
@@ -21,4 +24,3 @@
       }
       
       $dbconnect = null;
-?>

@@ -68,6 +68,8 @@
   </div>
 </div>
 
+<p class="text-center">Hello, <?=$_SESSION['name']?>. You can only access <?=$_SESSION['div']?></p>
+
 <!-- END OF CONTENT -->
 
 <?php include 'footer.php'; ?>

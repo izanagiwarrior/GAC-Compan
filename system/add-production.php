@@ -1,6 +1,9 @@
 <?php
     session_start();
     include "../config/conn.php";
+    if ($_SESSION['div'] != 'production') {
+      header("location: ../" . $_SESSION['role'] . "/home.php?page=home");
+    }
     $customer = $_POST['customer'];
     $order_quantity = $_POST['order_quantity'];
     $start = $_POST['start'];
@@ -23,4 +26,3 @@
       }
       
       $dbconnect = null;
-?>

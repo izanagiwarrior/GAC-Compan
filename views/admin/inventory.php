@@ -1,6 +1,9 @@
 <?php
 include 'header.php';
-$row = $dbconnect->query("SELECT * FROM inventory")
+$row = $dbconnect->query("SELECT * FROM inventory");
+if ($_SESSION['div'] != 'inventory') {
+    header("location: ../" . $_SESSION['role'] . "/home.php?page=home");
+}
 ?>
 
 <!-- Page Heading -->

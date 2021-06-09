@@ -1,5 +1,8 @@
 <?php
 include 'header.php';
+if ($_SESSION['div'] != 'production') {
+	header("location: ../" . $_SESSION['role'] . "/home.php?page=home");
+}
 ?>
 
 
