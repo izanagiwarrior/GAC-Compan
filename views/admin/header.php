@@ -38,11 +38,11 @@ include '../../Config/conn.php'; ?>
 			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 				<div class="sidebar-brand-icon rotate-n-15">
 				</div>
-				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo-gac.png" width="100%"></div>
+				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo-gac.png" class="my-3" style="width: 180px;"></div>
 			</a>
 
 			<!-- Divider -->
-			<hr class="sidebar-divider my-0">
+			<hr class="sidebar-divider mt-4">
 
 			<!-- Nav Item - Dashboard -->
 			<li class="nav-item <?php if (isset($menu0)) echo $menu0 ?>">

@@ -165,7 +165,7 @@ a {
 }
 
 a:hover {
-  color: #224abe;
+  color: #d8c303;
   text-decoration: underline;
 }
 
@@ -10127,6 +10127,7 @@ a:focus {
 
 .sidebar .nav-item.active .nav-link {
   font-weight: 700;
+  color: #cc7400;
 }
 
 .sidebar .nav-item .collapse {
