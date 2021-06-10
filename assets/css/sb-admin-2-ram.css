@@ -159,13 +159,18 @@ sup {
 }
 
 a {
-  color: #4e73df;
+  color: #000000;
   text-decoration: none;
-  background-color: transparent;
+  background-color: #ffffff;
+}
+
+.button-navbar{
+  border-radius: 20px;
+  border: 5px solid #fff;
 }
 
 a:hover {
-  color: #d8c303;
+  color: #26ff00;
   text-decoration: underline;
 }
 
@@ -3907,6 +3912,10 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-item {
   margin-bottom: -1px;
+}
+
+li{
+  margin: 10px 0px;
 }
 
 .nav-tabs .nav-link {
@@ -10127,7 +10136,7 @@ a:focus {
 
 .sidebar .nav-item.active .nav-link {
   font-weight: 700;
-  color: #cc7400;
+  color: #77dd77 ;
 }
 
 .sidebar .nav-item .collapse {

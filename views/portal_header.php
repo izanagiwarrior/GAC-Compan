@@ -20,7 +20,7 @@
   <link href="../assets/css/sb-admin-2-ram.css" rel="stylesheet">
 
 </head>
-<body class="bg-gradient-warning">
+<body class="" style="background:#fff48f;">
 
   <div class="container">
     <!-- Outer Row -->
@@ -35,7 +35,7 @@
             <div class="col-lg-6 d-none d-lg-block">
               <center>
                 <div style="margin-top: 4rem;">
-                  <a href="../index.php"><img src="../assets/img/logo-gac.png" width="50%"></a>
+                  <a href="../index.php"><img src="../assets/img/logo.png" width="50%"></a>
                 </div>
               </center>
             </div>

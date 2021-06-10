@@ -32,13 +32,13 @@ include '../config/conn.php'; ?>
 	<div id="wrapper">
 
 		<!-- Sidebar -->
-		<ul class="navbar-nav bg-gradient-success sidebar sidebar-primary accordion" id="accordionSidebar">
+		<ul class="navbar-nav sidebar sidebar-primary accordion" id="accordionSidebar" style="background:#fff48f;">
 
 			<!-- Sidebar - Brand -->
 			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 				<div class="sidebar-brand-icon rotate-n-15">
 				</div>
-				<div class="sidebar-brand-text mx-3"><img src="../assets/img/logo-gac.png" width="80%"></div>
+				<div class="sidebar-brand-text mx-3"><img src="../assets/img/logo.png" width="80%"></div>
 			</a>
 
 			<!-- Divider -->

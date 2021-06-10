@@ -32,13 +32,13 @@ include '../../Config/conn.php'; ?>
 	<div id="wrapper">
 
 		<!-- Sidebar -->
-		<ul class="navbar-nav bg-gradient-success sidebar sidebar-primary accordion" id="accordionSidebar">
+		<ul class="navbar-nav sidebar sidebar-primary accordion" id="accordionSidebar" style="background:#fff48f;">
 
 			<!-- Sidebar - Brand -->
 			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 				<div class="sidebar-brand-icon rotate-n-15">
 				</div>
-				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo-gac.png" class="my-3" style="width: 180px;"></div>
+				<div class="sidebar-brand-text mx-3"><img src="../../assets/img/logo.png" class="my-3" style="width: 180px;"></div>
 			</a>
 
 			<!-- Divider -->
@@ -46,7 +46,7 @@ include '../../Config/conn.php'; ?>
 
 			<!-- Nav Item - Dashboard -->
 			<li class="nav-item <?php if (isset($menu0)) echo $menu0 ?>">
-				<a class="nav-link" href="home.php?page=home">
+				<a class="nav-link button-navbar" href="home.php?page=home">
 					<i class="fas fa-fw fa-home"></i>
 					<span>Home</span></a>
 			</li>
@@ -61,19 +61,19 @@ include '../../Config/conn.php'; ?>
 
 			<!-- MENU A -->
 			<li class="nav-item <?php if (isset($menu1A)) echo $menu1A ?>">
-				<a class="nav-link" href="production.php?page=1A">
+				<a class="nav-link button-navbar" href="production.php?page=1A">
 					<i class="fas fa-fw fa-address-book"></i>
 					<span>PRODUCTION</span></a>
 			</li>
 
 			<li class="nav-item <?php if (isset($menu2A)) echo $menu2A ?>">
-				<a class="nav-link" href="purchasing.php?page=2A">
+				<a class="nav-link button-navbar" href="purchasing.php?page=2A">
 					<i class="fas fa-fw fa-address-book"></i>
 					<span>PURCHASING</span></a>
 			</li>
 
 			<li class="nav-item <?php if (isset($menu3A)) echo $menu3A ?>">
-				<a class="nav-link" href="inventory.php?page=3A">
+				<a class="nav-link button-navbar" href="inventory.php?page=3A">
 					<i class="fas fa-fw fa-address-book"></i>
 					<span>INVENTORY</span></a>
 			</li>
