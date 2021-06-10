@@ -69,6 +69,10 @@ body {
   background-color: #fff;
 }
 
+.small-button {
+  line-height: 0.5;
+}
+
 [tabindex="-1"]:focus {
   outline: 0 !important;
 }

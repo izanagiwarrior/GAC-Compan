@@ -22,19 +22,19 @@ if (($username == $username_admin_production) and ($password == $password_admin_
 	$_SESSION['status'] = "login";
 	$_SESSION['role'] = 'Admin';
 	$_SESSION['div'] = 'production';
-	$_SESSION['name'] = 'Giesta';
+	$_SESSION['name'] = 'prod_giesta';
 	header("location:../views/admin/home.php?page=home");
 } else if (($username == $username_admin_inventory) and ($password == $password_admin_inventory)) {
 	$_SESSION['status'] = "login";
 	$_SESSION['role'] = 'Admin';
 	$_SESSION['div'] = 'inventory';
-	$_SESSION['name'] = 'Sulthan';
+	$_SESSION['name'] = 'inv_sulthan';
 	header("location:../views/admin/home.php?page=home");
 } else if (($username == $username_admin_purchasing) and ($password == $password_admin_purchasing)) {
 	$_SESSION['status'] = "login";
 	$_SESSION['role'] = 'Admin';
 	$_SESSION['div'] = 'purchasing';
-	$_SESSION['name'] = 'Arinda';
+	$_SESSION['name'] = 'purc_arinda';
 	header("location:../views/admin/home.php?page=home");
 } else {
 	// select data that match with input

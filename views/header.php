@@ -38,7 +38,7 @@ include '../config/conn.php'; ?>
 			<a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
 				<div class="sidebar-brand-icon rotate-n-15">
 				</div>
-				<div class="sidebar-brand-text mx-3"><img src="../assets/img/logo.png" width="80%"></div>
+				<div class="sidebar-brand-text mx-3"><img src="../assets/img/logo.png" style="width: 150px;"></div>
 			</a>
 
 			<!-- Divider -->
@@ -46,7 +46,7 @@ include '../config/conn.php'; ?>
 
 			<!-- Nav Item - Dashboard -->
 			<li class="nav-item <?php if (isset($menu0)) echo $menu0 ?>">
-				<a class="nav-link" href="home.php?page=home">
+				<a class="nav-link button-navbar small-button" href="home.php?page=home">
 					<i class="fas fa-fw fa-home"></i>
 					<span>Home</span></a>
 			</li>
