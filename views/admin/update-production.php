@@ -1,5 +1,8 @@
 <?php
 include 'header.php';
+if ($_SESSION['div'] != 'production') {
+  header("location: ../" . $_SESSION['role'] . "/home.php?page=home");
+}
 $id = $_GET['id'];
 $row = $dbconnect->query("SELECT * FROM production WHERE id = '$id'");
 $data = $row->fetch();
@@ -43,22 +46,22 @@ $data = $row->fetch();
             <div class="form-group">
               <label>Start</label>
               <select name="start" id="cars" class="form-control form-control-sm" required>
-                <option value="07.00">07.00</option>
-                <option value="08.00">08.00</option>
-                <option value="09.00">09.00</option>
-                <option value="10.00">10.00</option>
-                <option value="11.00">11.00</option>
-                <option value="12.00">12.00</option>
+                <option value="07.00" <?php echo '07.00' == $data['start'] ? 'selected' : '' ?> >07.00</option>
+                <option value="08.00" <?php echo '08.00' == $data['start'] ? 'selected' : '' ?> >08.00</option>
+                <option value="09.00" <?php echo '09.00' == $data['start'] ? 'selected' : '' ?> >09.00</option>
+                <option value="10.00" <?php echo '10.00' == $data['start'] ? 'selected' : '' ?> >10.00</option>
+                <option value="11.00" <?php echo '11.00' == $data['start'] ? 'selected' : '' ?> >11.00</option>
+                <option value="12.00" <?php echo '12.00' == $data['start'] ? 'selected' : '' ?> >12.00</option>
               </select>
             </div>
             <div class="form-group">
               <label>Stop</label>
               <select name="stop" id="cars" class="form-control form-control-sm" required>
-                <option value="13.00">13.00</option>
-                <option value="14.00">14.00</option>
-                <option value="15.00">15.00</option>
-                <option value="16.00">16.00</option>
-                <option value="17.00">17.00</option>
+                <option value="13.00" <?php echo '13.00' == $data['stop'] ? 'selected' : '' ?> >13.00</option>
+                <option value="14.00" <?php echo '14.00' == $data['stop'] ? 'selected' : '' ?> >14.00</option>
+                <option value="15.00" <?php echo '15.00' == $data['stop'] ? 'selected' : '' ?> >15.00</option>
+                <option value="16.00" <?php echo '16.00' == $data['stop'] ? 'selected' : '' ?> >16.00</option>
+                <option value="17.00" <?php echo '17.00' == $data['stop'] ? 'selected' : '' ?> >17.00</option>
               </select>
             </div>
             <div class="form-group">
@@ -77,8 +80,9 @@ $data = $row->fetch();
             <div class="card-footer al-right">
               <input type="submit" class="btn btn-sm btn-success" value="Update Production">
             </div>
+          </tr>
+        </div>
       </form>
-
     </div>
   </div>
 </div>

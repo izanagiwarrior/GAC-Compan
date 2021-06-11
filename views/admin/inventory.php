@@ -41,6 +41,7 @@ if ($_SESSION['div'] != 'inventory') {
                                 <th>Status</th>
                                 <th>Stored</th>
                                 <th>Received Date</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -56,6 +57,10 @@ if ($_SESSION['div'] != 'inventory') {
                                         <td><?php echo $data['status'] ?></td>
                                         <td><?php echo $data['stored'] ?></td>
                                         <td><?php echo $data['received_date'] ?></td>
+                                        <td align="center">
+                                            <a href="update-inventory.php?id=<?php echo $data['id'] ?>" class="btn btn-sm btn-warning"><i class="fas fa-fw fa-edit"></i></a>
+                                            <a href="../../system/delete-inventory.php?id=<?php echo $data['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')"><i class="fas fa-fw fa-trash"></i></a>
+                                        </td>
                                     </tr>
 
                             <?php

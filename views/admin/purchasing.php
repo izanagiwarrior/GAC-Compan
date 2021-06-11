@@ -42,6 +42,7 @@ if ($_SESSION['div'] != 'purchasing') {
                 <th>Price</th>
                 <th>Total</th>
                 <th>Status</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -57,8 +58,12 @@ if ($_SESSION['div'] != 'purchasing') {
                     <td><?php echo $data['material_name'] ?></td>
                     <td><?php echo $data['quantity'] ?></td>
                     <td><?php echo $data['price'] ?></td>
-                    <td><?php echo $data['quantity']*$data['price'] ?></td>
+                    <td><?php echo $data['quantity'] * $data['price'] ?></td>
                     <td><?php echo $data['status'] ?></td>
+                    <td align="center">
+                      <a href="update-purchasing.php?id=<?php echo $data['id'] ?>" class="btn btn-sm btn-warning"><i class="fas fa-fw fa-edit"></i></a>
+                      <a href="../../system/delete-purchasing.php?id=<?php echo $data['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure?')"><i class="fas fa-fw fa-trash"></i></a>
+                    </td>
                   </tr>
 
               <?php $no++;
