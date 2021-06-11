@@ -32,6 +32,8 @@ include '../../Config/conn.php'; ?>
 	<div id="wrapper">
 
 		<!-- Sidebar -->
+
+		<!-- Warna Sidebar -->
 		<ul class="navbar-nav sidebar sidebar-primary accordion" id="accordionSidebar" style="background:#fff48f;">
 
 			<!-- Sidebar - Brand -->
@@ -113,6 +115,8 @@ include '../../Config/conn.php'; ?>
 						<!-- Nav Item - User Information -->
 						<li class="nav-item dropdown no-arrow">
 							<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+								<!-- Warna Tulisan Name -->
 								<span class="mr-2 d-none d-lg-inline text-gray-600 small"><i class="fas fa-user-tie fa-sm fa-fw mr-2"></i><?= $_SESSION["name"] ?></span>
 							</a>
 						</li>
@@ -121,6 +125,8 @@ include '../../Config/conn.php'; ?>
 
 						<li class="nav-item">
 							<a class="nav-link" href="../../auth/logout.php">
+
+								<!-- Warna Tulisan Logout -->
 								<span class="mr-2 d-none d-lg-inline small"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2"></i>Logout</span>
 							</a>
 						</li>

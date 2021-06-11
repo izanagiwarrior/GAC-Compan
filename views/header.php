@@ -32,6 +32,7 @@ include '../config/conn.php'; ?>
 	<div id="wrapper">
 
 		<!-- Sidebar -->
+		<!-- Warna Sidebar -->
 		<ul class="navbar-nav sidebar sidebar-primary accordion" id="accordionSidebar" style="background:#fff48f;">
 
 			<!-- Sidebar - Brand -->
@@ -86,6 +87,7 @@ include '../config/conn.php'; ?>
 
 						<li class="nav-item">
 							<a class="nav-link" href="login.php">
+								<!-- Warna Login -->
 								<span class="mr-2 d-none d-lg-inline small"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2"></i>Login</span>
 							</a>
 						</li>
