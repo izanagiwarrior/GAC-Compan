@@ -35,6 +35,7 @@ if ($_SESSION['div'] != 'inventory') {
                     <table class="table table-sm" id="dataTable" width="100%" cellspacing="0">
                         <thead>
                             <tr>
+                                <th>No</th>
                                 <th>Material ID</th>
                                 <th>Material Name</th>
                                 <th>Stock Avaibilty</th>
@@ -47,10 +48,12 @@ if ($_SESSION['div'] != 'inventory') {
                         <tbody>
 
                             <?php if ($row->rowCount() > 0) {
+                                $no = 1;
                                 while ($data = $row->fetch()) {
                             ?>
 
                                     <tr>
+                                        <td><?php echo $no ?></td>
                                         <td><?php echo $data['id'] ?></td>
                                         <td><?php echo $data['product_name'] ?></td>
                                         <td><?php echo $data['stock'] ?></td>
@@ -63,11 +66,14 @@ if ($_SESSION['div'] != 'inventory') {
                                         </td>
                                     </tr>
 
-                            <?php
+                            <?php $no++;
                                 }
                             } ?>
                         </tbody>
                     </table>
+                    <div class="text-right mt-4">
+                        <a href="report-inventory.php" class="btn btn-primary" target="_blank">Report</a>
+                    </div>
                 </div>
                 <!-- END OF TABLE -->
 

@@ -71,6 +71,9 @@ if ($_SESSION['div'] != 'purchasing') {
               } ?>
             </tbody>
           </table>
+          <div class="text-right mt-4">
+            <a href="report-purchasing.php" class="btn btn-primary" target="_blank">Report</a>
+          </div>
         </div>
         <!-- END OF TABLE -->
 

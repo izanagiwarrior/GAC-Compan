@@ -73,6 +73,9 @@ if ($_SESSION['div'] != 'production') {
               } ?>
             </tbody>
           </table>
+          <div class="text-right mt-4">
+            <a href="report-production.php" class="btn btn-primary" target="_blank">Report</a>
+          </div>
         </div>
         <!-- END OF TABLE -->
 
